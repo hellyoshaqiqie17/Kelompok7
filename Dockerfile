@@ -1,5 +1,5 @@
 # Stage 1: Build C backend & Next.js frontend
-FROM node:18-slim AS builder
+FROM node:20-slim AS builder
 
 # Install compiler dependencies
 RUN apt-get update && apt-get install -y \
@@ -23,7 +23,7 @@ RUN npm install
 RUN npm run build
 
 # Stage 2: Production runtime image
-FROM node:18-slim AS runner
+FROM node:20-slim AS runner
 
 # Install libc6-dev for execution environment compatibility
 RUN apt-get update && apt-get install -y \
