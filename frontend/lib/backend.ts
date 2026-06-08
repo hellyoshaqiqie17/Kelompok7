@@ -1,13 +1,22 @@
 import { execFile } from 'child_process';
 import path from 'path';
+import os from 'os';
 
 /**
- * Helper untuk menjalankan binary C 'kendaraan.exe'
+ * Helper untuk menjalankan binary C 'kendaraan' (Linux) atau 'kendaraan.exe' (Windows)
  * dengan argumen tertentu dan mengembalikan output JSON.
  */
 export function runKendaraan(args: string[]): Promise<any> {
-  const backendCwd = path.join(process.cwd(), '..', 'backend-c');
-  const exePath = path.join(backendCwd, 'kendaraan.exe');
+  // Gunakan variabel lingkungan jika diset (misalnya di Railway/Docker), 
+  // jika tidak gunakan folder default relative ke frontend.
+  const backendCwd = process.env.BACKEND_CWD 
+    ? path.resolve(process.env.BACKEND_CWD) 
+    : path.join(process.cwd(), '..', 'backend-c');
+    
+  // Deteksi sistem operasi untuk menentukan nama executable
+  const isWindows = os.platform() === 'win32';
+  const binaryName = isWindows ? 'kendaraan.exe' : 'kendaraan';
+  const exePath = path.join(backendCwd, binaryName);
 
   return new Promise((resolve, reject) => {
     execFile(exePath, args, { cwd: backendCwd }, (error, stdout, stderr) => {
@@ -39,3 +48,4 @@ export function runKendaraan(args: string[]): Promise<any> {
     });
   });
 }
+
