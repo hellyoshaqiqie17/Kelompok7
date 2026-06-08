@@ -4,7 +4,7 @@ Sistem Pengelolaan Data Kendaraan adalah aplikasi full-stack yang mengintegrasik
 
 ---
 
-## 🏛️ Arsitektur Sistem
+## Arsitektur Sistem
 
 Aplikasi ini menggunakan pendekatan hybrid:
 * **Frontend**: **Next.js App Router (v15)** dengan **TypeScript** dan styled menggunakan **Tailwind CSS v4** untuk antarmuka bertema *Premium Glassmorphism Dark Mode*.
@@ -13,7 +13,7 @@ Aplikasi ini menggunakan pendekatan hybrid:
 
 ---
 
-## 📋 Pemenuhan Persyaratan Tugas C
+##  Pemenuhan Persyaratan Tugas C
 
 Proyek ini telah memenuhi seluruh 10 persyaratan utama tugas pemrograman C secara ketat:
 
@@ -45,38 +45,7 @@ Proyek ini telah memenuhi seluruh 10 persyaratan utama tugas pemrograman C secar
 10. **Aman & Efisien**: Data I/O langsung ke file `data.json` lokal menggunakan custom JSON parser & serializer murni di C.
 
 ---
-
-## 🚀 Cara Menjalankan Project secara Lokal
-
-### Persyaratan Awal
-* Pastikan Anda memiliki compiler C (`gcc`) terinstal (misalnya melalui MinGW di Windows).
-* Node.js versi 18 ke atas dan npm.
-
-### Langkah 1: Clone & Siapkan Workspace
-Buka terminal (PowerShell / Command Prompt) di folder root workspace (`KELOMPOK7`).
-
-### Langkah 2: Kompilasi Executable C
-Jalankan script untuk meng-compile file source C menjadi program executable:
-```bash
-npm run compile-c
-```
-Perintah ini akan membuat file binary `backend-c/kendaraan.exe` di Windows.
-
-### Langkah 3: Jalankan Next.js Frontend & API Server
-Jalankan development server:
-```bash
-npm run dev
-```
-Buka browser Anda dan akses:
-👉 **[http://localhost:3000](http://localhost:3000)**
-
-### Perintah Penting Lainnya
-* **Build Project untuk Produksi**: `npm run build`
-* **Menjalankan Production Server**: `npm run start`
-
----
-
-## 📂 Struktur Direktori Proyek
+##  Struktur Direktori Proyek
 
 ```text
 KELOMPOK7/
