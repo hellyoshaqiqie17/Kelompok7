@@ -1,4 +1,4 @@
-# 🚗 Sistem Pengelolaan Data Kendaraan (CarData System) - Kelompok 7
+# Sistem Pengelolaan Data Kendaraan (CarData System) - Kelompok 7
 
 Sistem Pengelolaan Data Kendaraan adalah aplikasi full-stack yang mengintegrasikan frontend web modern dengan core data processing engine yang ditulis sepenuhnya dalam **Bahasa C**. Proyek ini dibuat untuk memenuhi tugas mata kuliah Bahasa C dengan arsitektur modern berkinerja tinggi.
 
