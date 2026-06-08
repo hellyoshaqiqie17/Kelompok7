@@ -1,0 +1,26 @@
+[
+  {
+    "plat": "L1234AB",
+    "merk": "Toyota Avanza",
+    "tahun": 2020,
+    "pajak": 3500000.00
+  },
+  {
+    "plat": "B5678XYZ",
+    "merk": "Honda Civic",
+    "tahun": 2018,
+    "pajak": 48000000.00
+  },
+  {
+    "plat": "D9012EF",
+    "merk": "Suzuki Ertiga",
+    "tahun": 2021,
+    "pajak": 2900000.00
+  },
+  {
+    "plat": "AG3NG",
+    "merk": "Mercedes Benz S class",
+    "tahun": 2024,
+    "pajak": 35000000.00
+  }
+]
